@@ -1,0 +1,148 @@
+.product {
+  img {
+    width: 328px;
+    height: auto;
+  }
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    border-left: 2px solid $color-primary;
+    padding-left: 0.5rem;
+    p:first-child {
+      font-size: 0.9rem;
+    }
+    p:nth-child(2) {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    p:last-child {
+      font-size: 0.9rem;
+    }
+  }
+  &__text {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  &__price {
+    display: flex;
+    border-left: 2px solid $color-primary;
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    span {
+      font-weight: normal;
+      margin-left: 0.5rem;
+    }
+  }
+  &__star {
+    display: flex;
+    align-items: center;
+    #star-1,
+    #star-2,
+    #star-3,
+    #star-4 {
+      fill: $color-primary;
+    }
+  }
+  &__num {
+    margin-left: 1rem;
+    span {
+      font-size: 1.4rem;
+    }
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: $color-primary;
+    padding: 0.7rem 2rem;
+    position: fixed;
+    top: 87%;
+    left: 28%;
+  }
+}
+.express {
+  position: relative;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: 2px solid $color-secondary;
+  border-radius: 2rem;
+
+  &__buy {
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #fe9200;
+  }
+  &__img {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    p {
+      color: #fff;
+      width: 100%;
+    }
+  }
+}
+.review {
+  position: relative;
+  border-radius: 2rem;
+  border: 2px solid $color-primary;
+  padding: 2rem 3rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  &__people {
+    border-radius: 1rem;
+    border: 1px solid $color-light;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem 2rem 1rem;
+    position: relative;
+    p:first-child {
+      font-size: 8px;
+      margin-bottom: 5px;
+    }
+    p:nth-child(2) {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+    p:last-child {
+      position: absolute;
+      font-size: 0.5rem;
+      right: 1rem;
+    }
+  }
+  &__total {
+    border: 0.5px solid #333;
+    width: 50%;
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 92%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    p {
+      font-size: 6px;
+      padding: 4px 2px;
+    }
+  }
+}

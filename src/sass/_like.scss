@@ -1,0 +1,17 @@
+.main {
+  margin-top: 2.4rem;
+  margin-bottom: 10rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &__box {
+  }
+  &__title {
+  }
+  a:visited,
+  a:link {
+    color: $color-primary;
+  }
+}

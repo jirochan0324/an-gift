@@ -1,0 +1,56 @@
+.cart {
+  &__header {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  &__groups {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  &__group {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+  &__icon {
+    display: flex;
+    justify-content: flex-end;
+    h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $color-primary;
+      padding: 1rem;
+    }
+  }
+
+  &__single {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      padding: 1rem;
+    }
+  }
+  &__input {
+    width: 320px;
+    height: 80px;
+    padding: 0.5rem;
+  }
+
+  &__total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  &__button {
+    border-radius: 1rem;
+    background-color: $color-primary;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    width: 150px;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+}
